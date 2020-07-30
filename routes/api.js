@@ -26,7 +26,7 @@ router.get('/', (req, res) => {
 //     }
 // });
 
-// Post one
+// Add one
 router.post('/', (req, res) => {
     const data = req.body;
 
@@ -53,12 +53,5 @@ router.delete('/:id', async (req, res) => {
     }
 });
 
-router.get('/name', (req, res) => {
-    const data = {
-        username: 'aoaoaoao',
-        age: '33'
-    }
-    res.json(data);
-});
 
 module.exports = router;
