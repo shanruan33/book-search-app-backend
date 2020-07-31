@@ -4,8 +4,13 @@ const mongoose = require('mongoose');
 // Schema
 const Schema = mongoose.Schema;
 const BookSchema = new Schema({
-    title: String,
-    body: String,
+    titleweb: String,
+    author: String,
+    pricecanada: String,
+    formatname: String,
+    flapcopy: String,
+    authorbio: String, 
+    isbn: String, 
     date: {
         type: Date,
         default: Date.now()
